@@ -1,0 +1,356 @@
+.bod{
+    border: 1px solid rgba(245, 241, 241, 0.438);
+    box-shadow: 1px 1px 10px rgba(208, 208, 208, 0.086);
+    border-bottom: 3px solid #c900df;
+    
+    margin-bottom: 20px;
+    display: block;
+    padding-left: 10px;
+    outline: none;
+    width: 100%;
+    height: 50px;
+
+}
+
+.bod::placeholder{
+    color: black;
+}
+.bod.error{
+    border: 3px solid #ff5e00;
+}
+.activeshow{
+    transform: translateY(-700px);
+    animation:anime 2s ease-in-out;
+}
+@keyframes anime {
+    0%{
+        transform:translateY(0px) rotatey(0deg) scale(1);
+    }
+    50%{
+        transform:translateY(-250px) rotatey(180deg) scale(0.4) ;
+        filter: blur(2px);    
+    }
+    100%{
+        transform:translateY(-700px) rotatey(180deg) scale(0);
+        filter: blur(2px);    
+
+    }
+    
+}
+.activeshow1{
+    transform: translateY(0px);
+    animation:anime10 2s ease-in-out;
+    
+}
+@keyframes anime10 {
+    0%{
+        filter: blur(2px);
+    }
+    75%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(0px);
+    }
+    
+}
+.tran{
+    transition: all 1s ease-in-out;
+    
+}
+.bbbb{
+    background: linear-gradient(to bottom,white ,#c900df0f);
+}
+.sds{
+    box-shadow: 0px 0px 10px rgb(242, 241, 241);
+}
+.dis1:hover .hid1{
+    max-width: 500px;
+    transition: 1s ease-in-out;
+}
+.dis2:hover .hid2{
+    max-width: 500px;
+    transition: 1s ease-in-out;
+}
+.dis3:hover .hid3{
+    max-width: 500px;
+    transition: 1s ease-in-out;
+}
+.dis4:hover .hid4{
+    max-width: 500px;
+    transition: 1s ease-in-out;
+}
+.dis1, .hid1, .dis2, .hid2 , .dis3 ,.hid3 ,.dis4 , .hid4{
+    transition: .3s ease-in-out;
+}
+.blu{
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+.blu2{
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+.place::placeholder{
+    color: rgb(0, 0, 0);
+}
+.hn:hover .as{
+    transform: translateX(0px);
+    transition: 1s ease-in-out;
+}
+.bor{
+    border-radius: 10px 0px 0px 0px;
+}
+
+.scrollx{
+    overflow: hidden;
+}
+@media only screen and (max-width: 400px) {
+    .njnj {
+      margin-left: 8px;
+    }
+    .mll{
+        padding: 0px;
+    }
+  }
+
+  .red{
+    border-bottom: 3px solid red;
+  }
+
+  /* Hide spinners in Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide spinners in Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+option {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 0px;
+    padding: 20px 20px;
+    border: 2px solid #c900df;
+  }
+  
+
+  /* From Uiverse.io by zjssun */ 
+.button {
+  position: relative;
+  padding: 6px 22px;
+  border-radius: 3px;
+  font-weight: 500;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #c900df;
+  transition: all 0.2s ease;
+}
+
+.button:active {
+  transform: scale(0.96);
+}
+
+.button:before,
+.button:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.button:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, #c900df 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #c900df 20%, transparent 30%),
+    radial-gradient(circle, #c900df 20%, transparent 20%),
+    radial-gradient(circle, #c900df 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #c900df 15%, transparent 20%),
+    radial-gradient(circle, #c900df 20%, transparent 20%),
+    radial-gradient(circle, #c900df 20%, transparent 20%),
+    radial-gradient(circle, #c900df 20%, transparent 20%),
+    radial-gradient(circle, #c900df 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.button:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #c900df 20%, transparent 20%),
+    radial-gradient(circle, #c900df 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #c900df 15%, transparent 20%),
+    radial-gradient(circle, #c900df 20%, transparent 20%),
+    radial-gradient(circle, #c900df 20%, transparent 20%),
+    radial-gradient(circle, #c900df 20%, transparent 20%),
+    radial-gradient(circle, #c900df 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.button1 {
+  position: relative;
+  padding: 6px 22px;
+  border-radius: 3px;
+  font-weight: 500;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #243375;
+  transition: all 0.2s ease;
+}
+
+.button1:active {
+  transform: scale(0.96);
+}
+
+.button1:before,
+.button1:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.button1:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, #243375 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #243375 20%, transparent 30%),
+    radial-gradient(circle, #243375 20%, transparent 20%),
+    radial-gradient(circle, #243375 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #243375 15%, transparent 20%),
+    radial-gradient(circle, #243375 20%, transparent 20%),
+    radial-gradient(circle, #243375 20%, transparent 20%),
+    radial-gradient(circle, #243375 20%, transparent 20%),
+    radial-gradient(circle, #243375 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.button1:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #243375 20%, transparent 20%),
+    radial-gradient(circle, #243375 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #243375 15%, transparent 20%),
+    radial-gradient(circle, #243375 20%, transparent 20%),
+    radial-gradient(circle, #243375 20%, transparent 20%),
+    radial-gradient(circle, #243375 20%, transparent 20%),
+    radial-gradient(circle, #243375 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.appbut{
+  border-radius: .25rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  height: 40px;
+  font-size: 0.7rem;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  transition: .2s .1s;
+  background-image: linear-gradient(90deg,#b23bc0,#ea5cfa);
+  border: 0 solid;
+  overflow: hidden;
+}
+.appbut:hover{
+    cursor: pointer;
+  transition: all .3s ease-in;
+  padding-right: 30px;
+  padding-left: 30px;
+}
