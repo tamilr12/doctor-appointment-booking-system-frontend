@@ -27,7 +27,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
-const allowedOrigins = ['http://localhost:5173'];
+const allowedOrigins = ['https://happy-desert-052551f10.6.azurestaticapps.net'];
 
 
 
