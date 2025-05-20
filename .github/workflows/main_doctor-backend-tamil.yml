@@ -25,17 +25,17 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
-        working-directory: doctor-backend  # 👈 Update this to your actual folder name
+        working-directory: doc_backend-main   # 👈 Update this to your actual folder name
 
       - name: Zip artifact for deployment
         run: zip -r release.zip .
-        working-directory: doctor-backend  # 👈 Same here
+        working-directory: doc_backend-main  # 👈 Same here
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: doctor-backend/release.zip  # 👈 Also update path here
+          path: doc_backend-main/release.zip  # 👈 Also update path here
 
   deploy:
     runs-on: ubuntu-latest
