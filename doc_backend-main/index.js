@@ -1,5 +1,7 @@
 const express =require('express')
 const app = express()
+const path = require('path');
+
 const mongoose = require('mongoose')
 const UserModel = require('./model/users')
 const Doctermodel = require('./model/docter')
@@ -16,6 +18,15 @@ app.use(express.json())
 //     methods: ["GET","POST","PUT","DELETE"],
 // }
 //  const allowedOrigins = ['https://doc-frontend-gamma.vercel.app'];
+
+
+// Serve frontend build
+app.use(express.static(path.join(__dirname, 'dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
 const allowedOrigins = ['http://localhost:5173'];
 
 
@@ -87,8 +98,10 @@ const newDocter = new Doctermodel({
     //   gender:String,
     },
   })
-//   newDocter.save().then(doc => console.log("Doc saved:", doc))
-//   .catch(err => console.error("Error saving user:", err));
+
+//    newDocter.save().then(doc => console.log("Doc saved:", doc))
+//    .catch(err => console.error("Error saving user:", err));
+
 app.post('/login',(req,res)=>{
     const {name,email,password,profileurl}=req.body
     UserModel.findOne({name:name})
@@ -305,6 +318,6 @@ if (!lastRun || lastRun.date !== today) {
 
 
 app.listen(PORT,()=>{
-   console.log(`Server running on port ${PORT}`)
+    console.log(`Server running on port ${PORT}`)
 
 })
