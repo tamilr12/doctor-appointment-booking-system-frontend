@@ -305,5 +305,6 @@ if (!lastRun || lastRun.date !== today) {
 
 
 app.listen(PORT,()=>{
-    console.log('server running on  port 3001')
+   console.log(`Server running on port ${PORT}`)
+
 })
