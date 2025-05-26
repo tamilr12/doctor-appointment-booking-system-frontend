@@ -56,7 +56,8 @@ Depicts the interactions between users (patients, doctors, admin) and the system
    Shows the system’s data model structure, including classes like User, Doctor, Appointment, and PatientProfile, along with their attributes and relationships.
 
 
-     ![Class Diagram](./class%20diagram.jpg)
+  ![Class Diagram](./class%20diagram.jpg)
+
 
   Sequence Diagram
 
@@ -64,14 +65,14 @@ Depicts the interactions between users (patients, doctors, admin) and the system
  Illustrates the flow of operations during key user interactions, such as the appointment booking process—showing step-by-step communication between frontend, 
   backend, and database.
 
-    ![Sequence Diagram](./sequence%20diagram.jpg)
+![Sequence Diagram](./sequence%20diagram.jpg)
 
  Component Diagram
   
   
   Displays the high-level software components (like frontend, backend, and database) and how they interact within the system, aiding in modular development.
 
-    ![Component Diagram](./component%20diagram.jpg)
+ ![Component Diagram](./component%20diagram.jpg)
 
 
 
@@ -81,7 +82,7 @@ Activity Diagram
   Demonstrates the workflow of specific operations like the user registration or appointment scheduling process, including decision points and actions.
 
 
-    ![Activity Diagram](./Activity%20diagram.jpg)
+![Activity Diagram](./Activity%20diagram.jpg)
 
 
 Architecture Diagram
@@ -107,6 +108,8 @@ Domain-Driven: Each service is built around a specific business domain (e.g., us
 Why Microservices for a Doctor Appointment Booking System?
 
 
+
+
 A doctor appointment system needs to handle diverse functionalities such as:
 User registration/login
 Booking and rescheduling appointments
@@ -114,13 +117,21 @@ Notifications and reminders
 Feedback and ratings
 Doctor availability management
 
+
+
 In a monolithic architecture, all this logic would live in one codebase, making it:
+
+
 
 ❌ Hard to maintain
 ❌ Risky to update (one bug can crash the whole app)
 ❌ Difficult to scale specific features
 
+
 With microservices, each feature is:
+
+
+
 ✔️ Built independently
 ✔️ Scaled as needed
 ✔️ Deployed without affecting others
