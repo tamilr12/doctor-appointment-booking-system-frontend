@@ -36,6 +36,14 @@
 - **Frontend Repository** (this repo): Handles the user interface built with React.
 - **[Backend Repository](https://github.com/tamilr12/doctor-appointment-booking-system-backend)**: RESTful API built with Node.js and Express.
 
+ **Live Demo**
+
+You can access the live deployed version of the app here:
+
+🔗 [Live Deployment — Visit the live app here](https://happy-desert-052551f10.6.azurestaticapps.net/)
+
+
+
 
 
 
