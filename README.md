@@ -1,13 +1,13 @@
 
 **Cloud-Based Doctor Appointment Booking System (SAFE)**
 
-![Logo](public/relogo.png)
+
 
   
    
    This project is a cloud-based web application built using Azure that enables users to register, log in, book doctor appointments, and view their scheduled appointments via a personalized profile. The system provides a user-friendly interface and secure access, offering features such as real-time appointment availability and booking confirmations.
 
-🔗 [Backend Repository — Visit the backend codebase here](https://github.com/tamilr12/doctor-appointment-booking-system-backend)
+
 
 
 
