@@ -1,5 +1,8 @@
 
 **Cloud-Based Doctor Appointment Booking System (SAFE)**
+
+![Logo](public/relogo.png)
+
   
    
    This project is a cloud-based web application built using Azure that enables users to register, log in, book doctor appointments, and view their scheduled appointments via a personalized profile. The system provides a user-friendly interface and secure access, offering features such as real-time appointment availability and booking confirmations.
@@ -8,7 +11,7 @@
 
 
 
-**Features**
+🧩**Features**
 
 
       User registration and login with secure authentication.
@@ -43,7 +46,7 @@
 
 
 
-**UML Diagrams**
+📊**UML Diagrams**
 
 Use case Diagram 
 
@@ -88,12 +91,12 @@ Activity Diagram
 Architecture Diagram
 
 
-**Microservices Architecture**
+🏗️**Microservices Architecture**
 
 Microservices is an architectural style where an application is divided into small, independent services. Each service handles a specific business function and communicates with others via APIs.
 
 
-**Key Characteristics of Microservices**
+✅**Key Characteristics of Microservices**
 
 
 
@@ -154,7 +157,7 @@ Microservices in the Doctor Appointment Booking System
   ![Architecture Diagram](./Microservices%20architecture%20diagram.jpg)
 
 
-  **Business Model**
+  💼 **Business Model**
  
  
   
@@ -203,7 +206,7 @@ Advertisements or Commissions: Revenue from promotions or a percentage per booki
 ![Business Model](./Bussiness%20Model%20diagram.jpg)
 
 
-**SOLID Principles Applied**
+🔁**SOLID Principles Applied**
 We follow the SOLID design principles to ensure modularity, scalability, and maintainability in our Doctor Appointment Booking System.
 
 **S – Single Responsibility Principle**
