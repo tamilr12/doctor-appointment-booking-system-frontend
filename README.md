@@ -6,15 +6,11 @@
 
 
 **Features**
+
+
       User registration and login with secure authentication.
-      
-      
       Real-time doctor appointment availability.
-     
-      
       Booking confirmation and scheduling system.
-      
-      
       Personalized profile with appointment history.
 
  
@@ -30,5 +26,8 @@
 
 
 **UML Diagrams**
-**Use Case Diagram** – Overview of system interactions.
+![Use Case Diagram](./use%20diagram.jpg)
+
+
+
 
