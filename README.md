@@ -26,7 +26,45 @@
 
 
 **UML Diagrams**
-![Use Case Diagram](./use%20diagram.jpg)
+
+Use case Diagram 
+
+Depicts the interactions between users (patients, doctors, admin) and the system. It highlights functionalities like login, appointment booking, viewing schedules, and managing profiles.
+ ![Use Case Diagram](./use%20diagram.jpg)
+
+  Class Diagram
+
+
+   Shows the system’s data model structure, including classes like User, Doctor, Appointment, and PatientProfile, along with their attributes and relationships.
+
+
+   ![Class Diagram](./class%20diagram.jpg)
+
+  Sequence Diagram
+
+
+ Illustrates the flow of operations during key user interactions, such as the appointment booking process—showing step-by-step communication between frontend, 
+  backend, and database.
+
+ ![Sequence Diagram](./sequence%20diagram.jpg)
+
+ Component Diagram
+  
+  
+  Displays the high-level software components (like frontend, backend, and database) and how they interact within the system, aiding in modular development.
+
+  ![Component Diagram](./component%20diagram.jpg)
+
+
+
+Activity Diagram
+  
+  
+  Demonstrates the workflow of specific operations like the user registration or appointment scheduling process, including decision points and actions.
+
+
+![Activity Diagram](./Activity%20diagram.jpg)
+  
 
 
 
